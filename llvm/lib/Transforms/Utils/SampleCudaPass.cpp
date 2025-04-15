@@ -42,9 +42,10 @@ PreservedAnalyses SampleCudaPass::run(Function &F,
   }
 
   if (isGPUKernel) {
-  errs() << "GPU Kernel detected: " << F.getName() << "\n";
+    errs() << "GPU Kernel detected: " << F.getName() << "\n";
   } else {
-  errs() << "Not a GPU kernel: " << F.getName() << "\n";
+    errs() << "Not a GPU kernel: " << F.getName() << "\n";
+    return PreservedAnalyses::all();
   }
   // End identifying GPU kernel
 
