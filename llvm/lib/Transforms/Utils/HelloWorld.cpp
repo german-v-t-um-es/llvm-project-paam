@@ -14,5 +14,15 @@ using namespace llvm;
 PreservedAnalyses HelloWorldPass::run(Function &F,
                                       FunctionAnalysisManager &AM) {
   errs() << F.getName() << "\n";
+  uint64_t count = 0;
+  for(auto &BB : F) {
+    for(auto &I : BB) {
+      errs() << I << "\n";
+      if (I.getOpcode() == Instruction::Load) {
+        count++;
+      }
+    }
+  }
+  errs() << "Number of loads: " << count << "\n";
   return PreservedAnalyses::all();
 }
