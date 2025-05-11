@@ -74,6 +74,5 @@ pythonenv*
 # automodapi puts generated documentation files here.
 /lldb/docs/python_api/
 
-/gpuBuild
-/kernels
+/paamBuild
 /paam-examples
