@@ -1,0 +1,388 @@
+Processing ./nw/nw.ll...
+WARNING: You're attempting to print out a bitcode file.
+This is inadvisable as it may cause display problems. If
+you REALLY want to taste LLVM bitcode first-hand, you
+can force output with the `-f' option.
+
+Analyzing: _Z8get_timev
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 10, 2, 0.20000, 2, 2, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 10, 2, 0.20000, 2, 2, 0
+-- Function _Z8get_timev presents high arithmetic intensity (0.20000) and should be run on GPU --
+
+Analyzing: _Z7maximumiii
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 3, 0, 0.00000, 0, 0, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 13, 2, 0.15385, 2, 2, 0
+-- Function _Z7maximumiii presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _Z7gettimev
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 11, 0, 0.00000, 2, 2, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 24, 2, 0.08333, 4, 4, 0
+-- Function _Z7gettimev presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: main
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 2, 0, 0.00000, 0, 0, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 26, 2, 0.07692, 4, 4, 0
+-- Function main presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _Z7runTestiPPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 234113, 62016, 0.26490, 33008, 18008, 15000
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 234139, 62018, 0.26488, 33012, 18012, 15000
+-- Function _Z7runTestiPPc presents high arithmetic intensity (0.26490) and should be run on GPU --
+
+Analyzing: _Z5usageiPPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 11, 0, 0.00000, 5, 5, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 234150, 62018, 0.26486, 33017, 18017, 15000
+-- Function _Z5usageiPPc presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _Z12nw_optimizedPiS_S_iii
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 10028, 2004, 0.19984, 2, 0, 2
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 244178, 64022, 0.26219, 33019, 18017, 15002
+-- Function _Z12nw_optimizedPiS_S_iii presents high arithmetic intensity (0.19984) and should be run on GPU --
+
+Analyzing: _Z12nw_optimizedPiS_S_iii.omp_outlined
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 538133, 246042, 0.45721, 65011, 49006, 16005
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 782311, 310064, 0.39634, 98030, 67023, 31007
+-- Function _Z12nw_optimizedPiS_S_iii.omp_outlined presents high arithmetic intensity (0.45721) and should be run on GPU --
+
+Analyzing: _Z12nw_optimizedPiS_S_iii.omp_outlined.5
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 538143, 246051, 0.45722, 65011, 49006, 16005
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1320454, 556115, 0.42115, 163041, 116029, 47012
+-- Function _Z12nw_optimizedPiS_S_iii.omp_outlined.5 presents high arithmetic intensity (0.45722) and should be run on GPU --
+
+Success: ./nw/nw.ll
+-------------------------
+Processing ./pathfinder/pathfinder.ll...
+WARNING: You're attempting to print out a bitcode file.
+This is inadvisable as it may cause display problems. If
+you REALLY want to taste LLVM bitcode first-hand, you
+can force output with the `-f' option.
+
+Analyzing: _Z4initiPPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 93069, 15006, 0.16124, 19014, 12009, 7005
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 93069, 15006, 0.16124, 19014, 12009, 7005
+-- Function _Z4initiPPc presents high arithmetic intensity (0.16124) and should be run on GPU --
+
+Analyzing: _Z5fatalPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 3, 0, 0.00000, 1, 1, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 93072, 15006, 0.16123, 19015, 12010, 7005
+-- Function _Z5fatalPc presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: main
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 2, 0, 0.00000, 0, 0, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 93074, 15006, 0.16123, 19015, 12010, 7005
+-- Function main presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _Z3runiPPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 32070, 4005, 0.12488, 13014, 10010, 3004
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 125144, 19011, 0.15191, 32029, 22020, 10009
+-- Function _Z3runiPPc presents high arithmetic intensity (0.12488) and should be run on GPU --
+
+Analyzing: _Z3runiPPc.omp_outlined
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 34038, 3001, 0.08817, 9012, 8007, 1005
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 159182, 22012, 0.13828, 41041, 30027, 11014
+-- Function _Z3runiPPc.omp_outlined presents high arithmetic intensity (0.08817) and should be run on GPU --
+
+Success: ./pathfinder/pathfinder.ll
+-------------------------
+Processing ./streamcluster/streamcluster.ll...
+WARNING: You're attempting to print out a bitcode file.
+This is inadvisable as it may cause display problems. If
+you REALLY want to taste LLVM bitcode first-hand, you
+can force output with the `-f' option.
+
+Analyzing: _Z7gettimev
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 11, 0, 0.00000, 2, 2, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 11, 0, 0.00000, 2, 2, 0
+-- Function _Z7gettimev presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _Z11isIdenticalPfS_i
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 12004, 1000, 0.08331, 2000, 2000, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 12015, 1000, 0.08323, 2002, 2002, 0
+-- Function _Z11isIdenticalPfS_i presents high arithmetic intensity (0.08331) and should be run on GPU --
+
+Analyzing: _Z7shuffleP6Points
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 19033, 5002, 0.26281, 4007, 4006, 1
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 31048, 6002, 0.19331, 6009, 6008, 1
+-- Function _Z7shuffleP6Points presents high arithmetic intensity (0.26281) and should be run on GPU --
+
+Analyzing: _Z10intshufflePii
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 14028, 3002, 0.21400, 4006, 2005, 2001
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 45076, 9004, 0.19975, 10015, 8013, 2002
+-- Function _Z10intshufflePii presents high arithmetic intensity (0.21400) and should be run on GPU --
+
+Analyzing: _Z4dist5PointS_i
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 47019, 9000, 0.19141, 10002, 10002, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 92095, 18004, 0.19549, 20017, 18015, 2002
+-- Function _Z4dist5PointS_i presents high arithmetic intensity (0.19141) and should be run on GPU --
+
+Analyzing: _Z7pspeedyP6PointsfPliP17pthread_barrier_t
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 324141, 56016, 0.17281, 72031, 56022, 16009
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 416236, 74020, 0.17783, 92048, 74037, 18011
+-- Function _Z7pspeedyP6PointsfPliP17pthread_barrier_t presents high arithmetic intensity (0.17281) and should be run on GPU --
+
+Analyzing: _Z5pgainlP6PointsdPliP17pthread_barrier_t
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 112303, 15041, 0.13393, 26078, 18052, 8026
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 528539, 89061, 0.16850, 118126, 92089, 26037
+-- Function _Z5pgainlP6PointsdPliP17pthread_barrier_t presents high arithmetic intensity (0.13393) and should be run on GPU --
+
+Analyzing: _Z5pgainlP6PointsdPliP17pthread_barrier_t.omp_outlined
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 127076, 27008, 0.21253, 27024, 21016, 6008
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 655615, 116069, 0.17704, 145150, 113105, 32045
+-- Function _Z5pgainlP6PointsdPliP17pthread_barrier_t.omp_outlined presents high arithmetic intensity (0.21253) and should be run on GPU --
+
+Analyzing: _Z5pgainlP6PointsdPliP17pthread_barrier_t.omp_outlined.omp.reduction.reduction_func
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 7, 1, 0.14286, 5, 4, 1
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 655622, 116070, 0.17704, 145155, 113109, 32046
+-- Function _Z5pgainlP6PointsdPliP17pthread_barrier_t.omp_outlined.omp.reduction.reduction_func presents high arithmetic intensity (0.14286) and should be run on GPU --
+
+Analyzing: _Z5pgainlP6PointsdPliP17pthread_barrier_t.omp_outlined.1
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 94048, 12007, 0.12767, 21015, 19010, 2005
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 749670, 128077, 0.17084, 166170, 132119, 34051
+-- Function _Z5pgainlP6PointsdPliP17pthread_barrier_t.omp_outlined.1 presents high arithmetic intensity (0.12767) and should be run on GPU --
+
+Analyzing: _Z3pFLP6PointsPiifPldlfiP17pthread_barrier_t
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 146049, 27005, 0.18490, 36006, 25005, 11001
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 895719, 155082, 0.17314, 202176, 157124, 45052
+-- Function _Z3pFLP6PointsPiifPldlfiP17pthread_barrier_t presents high arithmetic intensity (0.18490) and should be run on GPU --
+
+Analyzing: _Z19selectfeasible_fastP6PointsPPiiiP17pthread_barrier_t
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 93086, 23009, 0.24718, 18013, 9010, 9003
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 988805, 178091, 0.18011, 220189, 166134, 54055
+-- Function _Z19selectfeasible_fastP6PointsPPiiiP17pthread_barrier_t presents high arithmetic intensity (0.24718) and should be run on GPU --
+
+Analyzing: _Z8pkmedianP6PointsllPliP17pthread_barrier_t
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 193124, 32011, 0.16575, 34023, 26018, 8005
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1181929, 210102, 0.17776, 254212, 192152, 62060
+-- Function _Z8pkmedianP6PointsllPliP17pthread_barrier_t presents high arithmetic intensity (0.16575) and should be run on GPU --
+
+Analyzing: _Z11contcentersP6Points
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 107008, 14000, 0.13083, 25002, 16002, 9000
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1288937, 224102, 0.17387, 279214, 208154, 71060
+-- Function _Z11contcentersP6Points presents high arithmetic intensity (0.13083) and should be run on GPU --
+
+Analyzing: _Z11copycentersP6PointsS0_Pll
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 69025, 8000, 0.11590, 22005, 15004, 7001
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1357962, 232102, 0.17092, 301219, 223158, 78061
+-- Function _Z11copycentersP6PointsS0_Pll presents high arithmetic intensity (0.11590) and should be run on GPU --
+
+Analyzing: _Z14localSearchSubPv
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 11, 0, 0.00000, 5, 5, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1357973, 232102, 0.17092, 301224, 223163, 78061
+-- Function _Z14localSearchSubPv presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _Z11localSearchP6PointsllPl
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 53, 2, 0.03774, 17, 10, 7
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1358026, 232104, 0.17091, 301241, 223173, 78068
+-- Function _Z11localSearchP6PointsllPl presents low arithmetic intensity (0.03774); maybe it could be run on CPU --
+
+Analyzing: _Z12outcenterIDsP6PointsPlPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 72026, 6000, 0.08330, 20003, 15003, 5000
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1430052, 238104, 0.16650, 321244, 238176, 83068
+-- Function _Z12outcenterIDsP6PointsPlPc presents high arithmetic intensity (0.08330) and should be run on GPU --
+
+Analyzing: _Z13streamClusterP7PStreamllillPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 458123, 58012, 0.12663, 114022, 68009, 46013
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1888175, 296116, 0.15683, 435266, 306185, 129081
+-- Function _Z13streamClusterP7PStreamllillPc presents high arithmetic intensity (0.12663) and should be run on GPU --
+
+Analyzing: main
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 140, 9, 0.06429, 44, 37, 7
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1888315, 296125, 0.15682, 435310, 306222, 129088
+-- Function main presents high arithmetic intensity (0.06429) and should be run on GPU --
+
+Analyzing: _ZN9SimStream4readEPfii
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 38031, 10006, 0.26310, 4003, 1002, 3001
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926346, 306131, 0.15892, 439313, 307224, 132089
+-- Function _ZN9SimStream4readEPfii presents high arithmetic intensity (0.26310) and should be run on GPU --
+
+Analyzing: _ZN9SimStream6ferrorEv
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1, 0, 0.00000, 0, 0, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926347, 306131, 0.15892, 439313, 307224, 132089
+-- Function _ZN9SimStream6ferrorEv presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _ZN9SimStream4feofEv
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 5, 0, 0.00000, 1, 1, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926352, 306131, 0.15892, 439314, 307225, 132089
+-- Function _ZN9SimStream4feofEv presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _ZN7PStreamD2Ev
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1, 0, 0.00000, 0, 0, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926353, 306131, 0.15892, 439314, 307225, 132089
+-- Function _ZN7PStreamD2Ev presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _ZN9SimStreamD0Ev
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 2, 0, 0.00000, 0, 0, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926355, 306131, 0.15892, 439314, 307225, 132089
+-- Function _ZN9SimStreamD0Ev presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _ZN10FileStream4readEPfii
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 7, 1, 0.14286, 1, 1, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926362, 306132, 0.15892, 439315, 307226, 132089
+-- Function _ZN10FileStream4readEPfii presents high arithmetic intensity (0.14286) and should be run on GPU --
+
+Analyzing: _ZN10FileStream6ferrorEv
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 4, 0, 0.00000, 1, 1, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926366, 306132, 0.15892, 439316, 307227, 132089
+-- Function _ZN10FileStream6ferrorEv presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _ZN10FileStream4feofEv
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 4, 0, 0.00000, 1, 1, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926370, 306132, 0.15892, 439317, 307228, 132089
+-- Function _ZN10FileStream4feofEv presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _ZN10FileStreamD2Ev
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 6, 0, 0.00000, 2, 1, 1
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926376, 306132, 0.15892, 439319, 307229, 132090
+-- Function _ZN10FileStreamD2Ev presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _ZN10FileStreamD0Ev
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 7, 0, 0.00000, 2, 1, 1
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1926383, 306132, 0.15892, 439321, 307230, 132091
+-- Function _ZN10FileStreamD0Ev presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Success: ./streamcluster/streamcluster.ll
+-------------------------
+Processing ./myocyte/myocyte.ll...
+WARNING: You're attempting to print out a bitcode file.
+This is inadvisable as it may cause display problems. If
+you REALLY want to taste LLVM bitcode first-hand, you
+can force output with the `-f' option.
+
+Analyzing: _Z3eccfPfiS_iS_
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1071, 516, 0.48179, 82, 40, 42
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1071, 516, 0.48179, 82, 40, 42
+-- Function _Z3eccfPfiS_iS_ presents high arithmetic intensity (0.48179) and should be run on GPU --
+
+Analyzing: _Z3camfPfiS_iS_f
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 298, 98, 0.32886, 25, 16, 9
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1369, 614, 0.44850, 107, 56, 51
+-- Function _Z3camfPfiS_iS_f presents high arithmetic intensity (0.32886) and should be run on GPU --
+
+Analyzing: _Z3finPfiiiiS_S_fff
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 159, 51, 0.32075, 40, 30, 10
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1528, 665, 0.43521, 147, 86, 61
+-- Function _Z3finPfiiiiS_S_fff presents high arithmetic intensity (0.32075) and should be run on GPU --
+
+Analyzing: _Z6masterfPfS_S_i
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 59040, 1003, 0.01699, 10009, 2006, 8003
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 60568, 1668, 0.02754, 10156, 2092, 8064
+-- Function _Z6masterfPfS_S_i presents low arithmetic intensity (0.01699); maybe it could be run on CPU --
+
+Analyzing: _Z6solverPPfS_iS_i
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1330196, 89725, 0.06745, 298046, 168786, 129260
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1390764, 91393, 0.06571, 308202, 170878, 137324
+-- Function _Z6solverPPfS_iS_i presents high arithmetic intensity (0.06745) and should be run on GPU --
+
+Analyzing: _Z5writePcPfiiii
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 42023, 8000, 0.19037, 2000, 2000, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1432787, 99393, 0.06937, 310202, 172878, 137324
+-- Function _Z5writePcPfiiii presents high arithmetic intensity (0.19037) and should be run on GPU --
+
+Analyzing: _Z4readPcPfiii
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 30024, 6000, 0.19984, 4000, 2000, 2000
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1462811, 105393, 0.07205, 314202, 174878, 139324
+-- Function _Z4readPcPfiii presents high arithmetic intensity (0.19984) and should be run on GPU --
+
+Analyzing: _Z8get_timev
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 10, 2, 0.20000, 2, 2, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1462821, 105395, 0.07205, 314204, 174880, 139324
+-- Function _Z8get_timev presents high arithmetic intensity (0.20000) and should be run on GPU --
+
+Analyzing: main
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 183220, 12046, 0.06575, 58030, 37022, 21008
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1646041, 117441, 0.07135, 372234, 211902, 160332
+-- Function main presents high arithmetic intensity (0.06575) and should be run on GPU --
+
+Analyzing: main.omp_outlined
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 19034, 1001, 0.05259, 9009, 9004, 5
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 1665075, 118442, 0.07113, 381243, 220906, 160337
+-- Function main.omp_outlined presents high arithmetic intensity (0.05259) and should be run on GPU --
+
+Success: ./myocyte/myocyte.ll
+-------------------------
+Processing ./hotspot/hotspot.ll...
+WARNING: You're attempting to print out a bitcode file.
+This is inadvisable as it may cause display problems. If
+you REALLY want to taste LLVM bitcode first-hand, you
+can force output with the `-f' option.
+
+Analyzing: _Z8get_timev
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 10, 2, 0.20000, 2, 2, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 10, 2, 0.20000, 2, 2, 0
+-- Function _Z8get_timev presents high arithmetic intensity (0.20000) and should be run on GPU --
+
+Analyzing: _Z16single_iterationPfS_S_iifffff
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 30, 4, 0.13333, 9, 1, 8
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 40, 6, 0.15000, 11, 3, 8
+-- Function _Z16single_iterationPfS_S_iifffff presents high arithmetic intensity (0.13333) and should be run on GPU --
+
+Analyzing: _Z16single_iterationPfS_S_iifffff.omp_outlined
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 442049, 87011, 0.19684, 116012, 111007, 5005
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 442089, 87017, 0.19683, 116023, 111010, 5013
+-- Function _Z16single_iterationPfS_S_iifffff.omp_outlined presents high arithmetic intensity (0.19684) and should be run on GPU --
+
+Analyzing: _Z17compute_tran_tempPfiS_S_ii
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 33042, 1019, 0.03084, 9000, 1000, 8000
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 475131, 88036, 0.18529, 125023, 112010, 13013
+-- Function _Z17compute_tran_tempPfiS_S_ii presents low arithmetic intensity (0.03084); maybe it could be run on CPU --
+
+Analyzing: _Z5fatalPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 4, 0, 0.00000, 1, 1, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 475135, 88036, 0.18529, 125024, 112011, 13013
+-- Function _Z5fatalPc presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _Z11writeoutputPfiiPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 19017, 4000, 0.21034, 1000, 1000, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 494152, 92036, 0.18625, 126024, 113011, 13013
+-- Function _Z11writeoutputPfiiPc presents high arithmetic intensity (0.21034) and should be run on GPU --
+
+Analyzing: _Z10read_inputPfiiPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 14022, 1001, 0.07139, 2000, 1000, 1000
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 508174, 93037, 0.18308, 128024, 114011, 14013
+-- Function _Z10read_inputPfiiPc presents high arithmetic intensity (0.07139) and should be run on GPU --
+
+Analyzing: _Z5usageiPPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 19, 0, 0.00000, 9, 9, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 508193, 93037, 0.18307, 128033, 114020, 14013
+-- Function _Z5usageiPPc presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: main
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 19093, 4006, 0.20982, 1012, 1011, 1
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 527286, 97043, 0.18404, 129045, 115031, 14014
+-- Function main presents high arithmetic intensity (0.20982) and should be run on GPU --
+
+Success: ./hotspot/hotspot.ll
+-------------------------
+Processing ./bfs/bfs.ll...
+WARNING: You're attempting to print out a bitcode file.
+This is inadvisable as it may cause display problems. If
+you REALLY want to taste LLVM bitcode first-hand, you
+can force output with the `-f' option.
+
+Analyzing: _Z5UsageiPPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 4, 0, 0.00000, 2, 2, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 4, 0, 0.00000, 2, 2, 0
+-- Function _Z5UsageiPPc presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: main
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 2, 0, 0.00000, 0, 0, 0
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 6, 0, 0.00000, 2, 2, 0
+-- Function main presents low arithmetic intensity (0.00000); maybe it could be run on CPU --
+
+Analyzing: _Z8BFSGraphiPPc
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 50136, 3005, 0.05994, 19029, 12016, 7013
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 50142, 3005, 0.05993, 19031, 12018, 7013
+-- Function _Z8BFSGraphiPPc presents high arithmetic intensity (0.05994) and should be run on GPU --
+
+Analyzing: _Z8BFSGraphiPPc.omp_outlined
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 51037, 4001, 0.07839, 14013, 11008, 3005
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 101179, 7006, 0.06924, 33044, 23026, 10018
+-- Function _Z8BFSGraphiPPc.omp_outlined presents high arithmetic intensity (0.07839) and should be run on GPU --
+
+Analyzing: _Z8BFSGraphiPPc.omp_outlined.7
+Function stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 28056, 2004, 0.07143, 10017, 2008, 8009
+Global stats (INST, ARITHMETIC, AI, MEM_OPS, LD, ST): 129235, 9010, 0.06972, 43061, 25034, 18027
+-- Function _Z8BFSGraphiPPc.omp_outlined.7 presents high arithmetic intensity (0.07143) and should be run on GPU --
+
+Success: ./bfs/bfs.ll
+-------------------------
