@@ -32,7 +32,6 @@ add_llvm_component_library(LLVMTransformUtils
   GlobalStatus.cpp
   GuardUtils.cpp
   HelloWorld.cpp
-  # SampleCudaPass.cpp
   PAAMPass.cpp
   InlineFunction.cpp
   InjectTLIMappings.cpp
